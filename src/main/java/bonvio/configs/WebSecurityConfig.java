@@ -18,7 +18,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .csrf().disable() // DISABLED CSRF protection to make it easier !
                 .authorizeRequests()
-                .antMatchers("/css/**", "/webjars/**" ,"/", "/index", "/login/callback/vk").permitAll()
+                .antMatchers("/webjars/**" ,"/", "/index", "/login/callback/vk").permitAll()
                 .anyRequest().fullyAuthenticated()
                 .and()
                 .formLogin()

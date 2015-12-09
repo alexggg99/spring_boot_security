@@ -74,47 +74,5 @@ public class CustomUserDetailsService implements UserDetailsService {
     }
 
 
-//    private final static class UserRepositoryUserDetails extends User implements UserDetails {
-//
-//        private static final long serialVersionUID = 1L;
-//
-//        private Set<Authority> authorities;
-//
-//        public UserRepositoryUserDetails(User user) {
-//            super(user);
-//        }
-//
-//        @Override
-//        public Collection<? extends GrantedAuthority> getAuthorities() {
-//            authorities = EnumSet.noneOf(Authority.class);
-//            return authorities;
-//        }
-//
-//        @Override
-//        public String getUsername() {
-//            return getLogin();
-//        }
-//
-//        @Override
-//        public boolean isAccountNonExpired() {
-//            return true;
-//        }
-//
-//        @Override
-//        public boolean isAccountNonLocked() {
-//            return true;
-//        }
-//
-//        @Override
-//        public boolean isCredentialsNonExpired() {
-//            return true;
-//        }
-//
-//        @Override
-//        public boolean isEnabled() {
-//            return true;
-//        }
-//
-//    }
 
 }
